@@ -1,0 +1,83 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  display: flex;
+  justify-content: right;
+  gap: 1.5em;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 37px;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+nav button {
+  color: white;
+  background-color: #fd7f97;
+  border: none;
+
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fd7f97;
+}
+.display-logo {
+  display: flex;
+  margin-left: 2rem;
+  align-items: center;
+}
+
+.logo {
+  max-width: 5rem;
+  max-height: 5rem;
+}
+
+.name {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.5em;
+  line-height: 24px;
+  text-decoration: none;
+  /* identical to box height */
+  color: #fd7f97;
+}
+
+.slogan {
+  font-family: "Lato";
+  width: 75%;
+  margin: 10rem 12.5%;
+  text-align: center;
+  color: rgba(41, 41, 41, 0.88);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3.5em;
+  line-height: 80px;
+  margin-bottom: 1em;
+}
+
+.introduce {
+  width: 70%;
+  margin: 0 15%;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 2.3em;
+  line-height: 58px;
+  text-align: center;
+  color: #30343f;
+}
