@@ -71,6 +71,7 @@ nav ul a {
 
 .introduce {
   margin: 0 auto;
+
   font-family: "Lato";
   font-style: normal;
   font-weight: 200;
@@ -132,4 +133,22 @@ nav ul a {
   .button {
     background-color: transparent;
   }
+}
+
+.skill-container {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin-top: 3em;
+}
+
+.trending-skills {
+  background-color: #f8f8f8;
+  width: 27%;
+}
+
+.bulb {
+  min-width: 230px;
+  min-height: 230px;
+  margin: 0 auto;
 }
