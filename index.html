@@ -11,20 +11,23 @@
     />
     <title>Ivan Lukov</title>
     <link rel="icon" href="lukivan.ico" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header>
       <div class="display-logo">
-        <a href="#"><img class="logo" src="Logo.svg" alt="" /></a>
+        <a href="#"><img class="logo" src="/svgs/Logo.svg" alt="" /></a>
         <a class="name" href="#">IVAN LUKOV</a>
       </div>
-      <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#">Portfolio</a>
-        <a href="#">About</a>
-        <a href="#">Philosophy</a>
-        <button>Get In Touch</button>
+      <a href="#"><img class="hamburger" src="/svgs/burger.svg" alt="NAV" /></a>
+      <nav id="navlinks">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Philosophy</a></li>
+          <li><a href="" class="button">Get In Touch</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -33,5 +36,6 @@
       Hi. I’m Ivan, an aspiring front-end developer looking for challenges to
       overcome and skills to learn
     </p>
+    <script src="index.js"></script>
   </body>
 </html>
