@@ -1,3 +1,7 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -6,13 +10,12 @@ header {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 nav {
-  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 1.2rem;
-
   margin-right: 2rem;
 }
 
@@ -46,32 +49,25 @@ nav ul a {
 }
 
 .name {
-  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 1.5em;
-
   text-decoration: none;
-
   color: #fd7f97;
 }
 
 .slogan {
-  font-family: "Lato";
-
-  margin: 10rem auto;
+  margin: 6rem auto;
   text-align: center;
   color: rgba(41, 41, 41, 0.88);
   font-style: normal;
   font-weight: 800;
   font-size: clamp(1.8em, calc(1em + 2.4vw), 3em);
-
   margin-bottom: 1em;
 }
 
 .introduce {
   margin: 0 auto;
-  font-family: "Lato";
   font-style: normal;
   font-weight: 200;
   font-size: clamp(1.125em, 2vw, 1.6em);
@@ -108,6 +104,91 @@ nav ul a {
   display: none;
 }
 
+.skill-container {
+  display: flex;
+  justify-content: center;
+  gap: 2.5%;
+  margin: 3em auto;
+}
+
+.trending-skills {
+  background-color: #f8f8f8;
+  width: 20%;
+  text-align: center;
+  padding: 15px 20px;
+}
+
+.images {
+  width: 80%;
+  margin: 0 10%;
+}
+
+.mob-text {
+  display: none;
+}
+
+hr {
+  width: 90%;
+  background-color: #434650;
+  border-width: 0px;
+  height: 1px;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.works img {
+  margin-top: 7rem;
+}
+
+.works div {
+  background-color: rgb(190, 190, 190);
+  padding-bottom: 4rem;
+}
+
+#work-1 {
+  width: 40rem;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  align-self: flex-start;
+}
+
+#work-2 {
+  width: 40rem;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  align-self: flex-end;
+}
+
+#work-3 {
+  width: 40rem;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.work-label {
+  text-align: center;
+}
+
+.typewriter {
+  font-family: "Roboto Mono", sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: 800;
+  font-size: clamp(1.8em, calc(1em + 2.4vw), 3em);
+}
+
 @media (max-width: 900px) {
   nav {
     display: none;
@@ -131,5 +212,21 @@ nav ul a {
   }
   .button {
     background-color: transparent;
+  }
+  .desk-text {
+    display: none;
+  }
+  .mob-text {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .skill-container {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .trending-skills {
+    width: 70%;
+    margin: 0 10%;
   }
 }
